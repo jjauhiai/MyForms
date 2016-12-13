@@ -17,6 +17,7 @@ urlpatterns=[
     #url(r'^admin/', include(admin.site.urls)),
     url(r'^$', views.hello, name='hello'),
     url(r'^index$', views.index, name='index'),
+    url(r'^Page1$', views.Page1, name='Page1'),
     #url(r'^hell$', views.hell,name='hello'),
     #url(r'^post_list$', views.post_list,name='post_list'),
     #url(r'^post/(?P<pk>\d+)/$', views.post_detail, name='post_detail'),

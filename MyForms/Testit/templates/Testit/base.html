@@ -2,12 +2,39 @@
 {% load staticfiles %}
 <html>
     <head>
-        <title>My Page</title>
+
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        /* <section id="headerwrap">
+          <h1><a href="/">Test Pages of Jukka Jauhiainen</a></h1>
+        </section>
+        */
     </head>
     <body>
-      <div class="page-header">
-        <h1><a href="/">My Page</a></h1>
-    </div>
+      <nav class="navbar navbar-brand">
+        <div class="container-fluid">
+          <div class="navbar-header">
+              <a class="navbar-brand" href="/">WebSiteName</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="/index">Home</a></li>
+            <li><a href="Page1">Page 1</a></li>
+            <li><a href="#">Page 2</a></li>
+            <li><a href="#">Page 3</a></li>
+          </ul>
+        </div>
+      </nav>
+      <section id="workwrap">
+        <div id="content">
+          {% block content %}
+
+          {% endblock %}
+        </div>
+     </section>
+       <section id="footerwrap">
+        <font color="yellow">  Copyright (C) 2016 JJAUHIAI</font>
+       </section>
     </body>
 </html>
